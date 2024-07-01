@@ -43,6 +43,7 @@ p {
 }
 .published {
   font-size: 14px;
+  font-weight: normal;
 }
 #article-description {
   color: hsl(0, 0%, 50%);
