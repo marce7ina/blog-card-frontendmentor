@@ -44,6 +44,7 @@ p {
 .published {
   font-size: 14px;
   font-weight: normal;
+  margin-bottom: 12px;
 }
 #article-description {
   color: hsl(0, 0%, 50%);
