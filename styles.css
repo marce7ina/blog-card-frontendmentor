@@ -85,4 +85,7 @@ p {
   .category-photo {
     width: 279px;
   }
+  .link {
+    font-size: 1.2rem;
+  }
 }
