@@ -1,94 +1,88 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsla(0, 0%, 0%, 0.534);
+  --black: hsl(0, 0, 0);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
 }
 html {
-  background-color: hsl(47, 88%, 63%);
-  font-family: "Figtree", sans-serif;
-}
-
-.blog-card > * {
-  display: block;
-  padding: 24px;
-}
-.blog-card {
-  background-color: hsl(0, 0%, 100%);
-  width: 384px;
-  border-radius: 20px;
-  border: 1px solid black;
-  box-shadow: 10px 10px 0 black;
-}
-#main {
+  background-color: var(--yellow);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.bold {
+
+.blog-card {
+  background-color: var(--white);
+  width: 384px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  box-shadow: 8px 8px 0 black;
+  padding: 24px;
+}
+li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.category {
+  background-color: var(--yellow);
   font-weight: 800;
+  padding: 5px 15px;
+  border-radius: 5px;
 }
-/** article content **/
-button,
-p,
-h1 {
-  margin: 0 0 12px 0;
-}
-p {
-  font-size: 16px;
-  font-weight: 500;
-}
-.article-image {
+.category-photo {
   border-radius: 10px;
 }
-.published {
-  font-size: 14px;
-}
-#article-description {
-  color: hsl(0, 0%, 50%);
-}
-button {
-  background-color: hsl(47, 88%, 63%);
-  border: none;
-  padding: 4px 12px;
-  border-radius: 4px;
-  margin-top: 12px;
-}
-.link {
-  text-decoration: none;
-  color: black;
-}
-.link:active,
-.link:hover {
-  color: hsl(47, 88%, 63%);
-}
-/** end of article content **/
-
-/** author content **/
-.author-list {
+.author {
   display: flex;
   align-items: center;
-  gap: 10px;
+  margin-bottom: 0;
+}
+.author-avatar {
+  width: 50px;
+  padding-right: 15px;
+}
+.author-info {
+  font-size: 1rem;
+  font-weight: 800;
+}
+time {
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
-.author-image {
-  width: 32px;
-}
-.author-text {
-  font-size: 16px;
+.link {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
-.author-content {
-  padding-top: 0;
+.link:active,
+.link:hover {
+  color: var(--yellow);
 }
-/** end of author content **/
+p {
+  line-height: 1.5rem;
+  color: var(--grey);
+  font-size: 1rem;
+  font-weight: 500;
+}
 
-/** media query **/
 @media (max-width: 375px) {
   .blog-card {
     width: 327px;
   }
-  .article-image {
+  .category-photo {
     width: 279px;
   }
 }
