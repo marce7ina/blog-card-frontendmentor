@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <meta name="author" content="marce7ina" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,43 +17,42 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./styles.css" />
-
     <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <main id="main">
-      <div class="blog-card">
-        <section class="article-content">
+    <article class="blog-card">
+      <ul>
+        <li>
           <img
-            class="article-image"
-            src="assets/images/illustration-article.svg"
-            alt="article illustration"
+            class="category-photo"
+            src="./assets/images/illustration-article.svg"
+            alt="decorating photo to category of the article"
           />
-          <div class="article-content">
-            <button class="bold">Learning</button>
-            <p class="published">Published 21 Dec 2023</p>
-            <h1><a href="#" class="link">HTML & CSS foundations</a></h1>
-            <p id="article-description">
-              These languages are the backbone of every website, defining
-              structure, content, and presentation.
-            </p>
-          </div>
-        </section>
-        <section class="author-content">
-          <article class="author-list">
-            <div class="author-image-content">
-              <img
-                class="author-image"
-                src="assets/images/image-avatar.webp"
-                alt="Greg's photo"
-              />
-            </div>
-            <div class="author-name">
-              <h2 class="author-text bold">Greg Hooper</h2>
-            </div>
-          </article>
-        </section>
-      </div>
-    </main>
+        </li>
+        <li>
+          <span class="category">Learning</span>
+        </li>
+        <li>
+          <time datetime="2023-12-21">Published 21 Dec 2023</time>
+        </li>
+        <li>
+          <a href="#" class="link">HTML &amp; CSS foundations</a>
+        </li>
+        <li>
+          <p>
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </li>
+        <li class="author">
+          <img
+            class="author-avatar"
+            src="./assets/images/image-avatar.webp"
+            alt="Greg Hooper's photo"
+          />
+          <h2 class="author-info">Greg Hooper</h2>
+        </li>
+      </ul>
+    </article>
   </body>
 </html>
