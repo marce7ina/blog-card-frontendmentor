@@ -14,12 +14,13 @@
 }
 html {
   background-color: var(--yellow);
+}
+#main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
 .blog-card {
   background-color: var(--white);
   width: 384px;
