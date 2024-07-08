@@ -1,8 +1,8 @@
 :root {
   --yellow: hsl(47, 88%, 63%);
   --white: hsl(0, 0%, 100%);
-  --grey: hsla(0, 0%, 0%, 0.534);
-  --black: hsl(0, 0, 0);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0, 7%);
 }
 
 * {
@@ -80,7 +80,7 @@ p {
 
 @media (max-width: 375px) {
   .blog-card {
-    width: 327px;
+    width: 320px;
   }
   .category-photo {
     width: 279px;
